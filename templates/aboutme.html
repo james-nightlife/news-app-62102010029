@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- Title -->
-        <title>News & Weather</title>
-        <!-- UTF-8 Display -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <!-- Mobile First -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <!-- Bootstrap JS-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <!-- Brand -->
-            <a class="navbar-brand" href="..">News & Weather</a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
+{% extends 'base_layout.html' %}
+{% block body %}
         <!-- Body -->
         <div id="body" class="my-5">
             <div class="container" style="margin-top:30px">
@@ -35,8 +9,4 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron text-center fixed-bottom p-1" style="margin-bottom:0">
-            <p>&copy; Sutthiphong Kannikaklang SWU62102010029 MMXXI</p>
-        </div>
-    </body>
-</html>
+{% endblock %}
